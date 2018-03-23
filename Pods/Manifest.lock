@@ -1,0 +1,34 @@
+PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Kingfisher (4.6.4)
+  - NSObject+Rx (4.2.0):
+    - RxSwift (~> 4.0)
+  - ReachabilitySwift (3)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - Swinject (2.1.1)
+
+DEPENDENCIES:
+  - Action (~> 3.4)
+  - Kingfisher (~> 4.0)
+  - NSObject+Rx (~> 4.1)
+  - ReachabilitySwift (~> 3)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - Swinject (~> 2.1.0)
+
+SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  NSObject+Rx: cbbc05e3cb3ad446cdbced3e00e39c9efaf02925
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
+
+PODFILE CHECKSUM: 0ddc3803aaf402a93380ba6116b2c482913bc4db
+
+COCOAPODS: 1.4.0
