@@ -242,6 +242,7 @@
 		078F47F92065051000DA68B4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				71924DB0206566A40005C6C9 /* ReusableCell */,
 				078F47FA2065051000DA68B4 /* DetailViewController */,
 				078F47FD2065051000DA68B4 /* ListPostViewController */,
 			);
@@ -260,9 +261,6 @@
 		078F47FD2065051000DA68B4 /* ListPostViewController */ = {
 			isa = PBXGroup;
 			children = (
-				078F47FE2065051000DA68B4 /* ListPostCellViewModel.swift */,
-				078F47FF2065051000DA68B4 /* ListPostTableViewCell.swift */,
-				078F48002065051000DA68B4 /* ListPostTableViewCell.xib */,
 				078F48012065051000DA68B4 /* ListPostViewController.swift */,
 				078F48022065051000DA68B4 /* ListPostViewModel.swift */,
 			);
@@ -330,6 +328,16 @@
 				078F48232065051100DA68B4 /* User.swift */,
 			);
 			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		71924DB0206566A40005C6C9 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				078F47FE2065051000DA68B4 /* ListPostCellViewModel.swift */,
+				078F47FF2065051000DA68B4 /* ListPostTableViewCell.swift */,
+				078F48002065051000DA68B4 /* ListPostTableViewCell.xib */,
+			);
+			path = ReusableCell;
 			sourceTree = "<group>";
 		};
 		975F596C95FA8F50F0C43744 /* Frameworks */ = {
@@ -765,8 +773,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z495DZRPVP;
+				DEVELOPMENT_TEAM = KBWN3BETTA;
 				INFOPLIST_FILE = "$(SRCROOT)/InstagramCloneApp/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsk.InstagramCloneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -783,8 +792,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z495DZRPVP;
+				DEVELOPMENT_TEAM = KBWN3BETTA;
 				INFOPLIST_FILE = "$(SRCROOT)/InstagramCloneApp/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsk.InstagramCloneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
