@@ -13,7 +13,6 @@ class ListPostTableViewCell: UITableViewCell {
    
    @IBOutlet weak var postImage: UIImageView!
    @IBOutlet weak var profileImage: UIImageView!
-   
    @IBOutlet weak var username: UILabel!
    @IBOutlet weak var likeButton: UIButton!
    @IBOutlet weak var commentButton: UIButton!
@@ -22,13 +21,9 @@ class ListPostTableViewCell: UITableViewCell {
    @IBOutlet weak var likeCountLabel: UILabel!
    @IBOutlet weak var createDateLabel: UILabel!
    @IBOutlet weak var commentLabel: UILabel!
+
    
-   var viewModel: ListPostCellViewModel!
-   
-   
-   func configure(with item: Post) {
-      
-      viewModel = ListPostCellViewModel(item: item)
+   func configure(with viewModel: ListPostCellViewModelType) {
       
      // Assign property
       profileImage.kf.setImage(with: viewModel.userProfileUrl)

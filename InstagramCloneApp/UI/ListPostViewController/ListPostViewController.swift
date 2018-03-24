@@ -101,7 +101,8 @@ extension ListPostViewController {
             self?.refresher.endRefreshing()
          })
          .drive(tableView.rx.items(cellIdentifier: ListPostTableViewCell.identifier, cellType:  ListPostTableViewCell.self)) { index, model, cell in
-            cell.configure(with: model)
+            let viewModel = ListPostCellViewModel(item: model)
+            cell.configure(with: viewModel)
          }
          .disposed(by: self.rx.disposeBag)
       

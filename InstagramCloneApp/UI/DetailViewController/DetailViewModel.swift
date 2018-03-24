@@ -16,7 +16,4 @@ class DetailViewModel {
   init(item:[Post]) {
     self.item.value = item
   }
-   
-   
-   
 }

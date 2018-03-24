@@ -9,9 +9,33 @@
 
 import UIKit
 
-class ListPostCellViewModel {
+
+protocol ListPostCellViewModelType {
+   var placeHolderUrl: UIImage { get }
+   var userProfileUrl: URL { get }
+   var numberOfLike: String { get }
+   var numberOfComment:String { get }
+   var postImageURl: URL { get }
+   var createDate:String { get }
+}
+
+// MARK - Helper
+extension ListPostCellViewModelType {
+   fileprivate func myLike(like: Int) -> String {
+      let mylike = like > 1 ? "\(like) likes" : "\(like) like"
+      return mylike
+   }
    
-   let item: Post
+   fileprivate func myComment(comment: Int) -> String {
+      let mycomment = comment > 1 ? "\(comment) comments" : "\(comment) comment"
+      return mycomment
+   }
+}
+
+
+class ListPostCellViewModel: ListPostCellViewModelType {
+   
+   private let item: Post
    
    init(item: Post) {
       self.item = item
@@ -45,15 +69,4 @@ class ListPostCellViewModel {
    
 }
 
-// MARK - Helper
-extension ListPostCellViewModel {
-   fileprivate func myLike(like: Int) -> String {
-      let mylike = like > 1 ? "\(like) likes" : "\(like) like"
-      return mylike
-   }
-   
-   fileprivate func myComment(comment: Int) -> String {
-      let mycomment = comment > 1 ? "\(comment) comments" : "\(comment) comment"
-      return mycomment
-   }
-}
+
