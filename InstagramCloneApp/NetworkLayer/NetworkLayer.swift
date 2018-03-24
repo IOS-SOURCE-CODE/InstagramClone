@@ -55,7 +55,7 @@ final class NetworkLayer: NetworkLayerType {
          
          return Disposables.create(with: task.cancel)
          
-      }
+      }.retry(3)
    }
    
    
