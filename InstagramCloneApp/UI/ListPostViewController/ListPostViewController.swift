@@ -119,12 +119,13 @@ extension ListPostViewController {
       
       // Bind loading more pagaintion
       tableView.rx.didEndDragging
-         .debounce(0.5, scheduler: MainScheduler.instance)
-         .withLatestFrom(tableView.rx.contentOffset)
+        .debounce(0.5, scheduler: MainScheduler.instance)
+        .withLatestFrom(tableView.rx.contentOffset)
          .filter { [unowned self] _ -> Bool in
-            return self.tableView.isReachBottom(with: 500)
+            return self.tableView.isReachBottom(with: 0)
          }
          .subscribe(onNext: { [weak self] value in
+          debugPrint("========== request ===========")
             self?.viewModel.fetchMorePage()
          }).disposed(by: self.rx.disposeBag)
       

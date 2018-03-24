@@ -14,3 +14,12 @@ struct Pagination : Decodable {
    var next_url: URL?
    
 }
+
+
+extension Pagination: Equatable {
+  static func ==(lhs: Pagination, rhs: Pagination) -> Bool {
+    return lhs == rhs
+  }
+  
+  
+}
