@@ -22,6 +22,6 @@ struct Post : Decodable {
 
 extension Post : Equatable {
    static func ==(lhs: Post, rhs: Post) -> Bool {
-      return true
+      return lhs.id == rhs.id
    }
 }

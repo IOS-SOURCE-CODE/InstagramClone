@@ -2,4 +2,149 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+            timestampString = "543649774.744953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "fetchMorePage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+            timestampString = "543649774.745363"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchMorePage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+            timestampString = "543649774.745842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchMorePage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (Swift.Array&lt;InstagramCloneApp.Post&gt;) -&gt; Swift.Bool in InstagramCloneApp.ListPostViewModel.fetchMorePage() -&gt; ()"
+                  moduleName = "InstagramCloneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seyha/Documents/Projects/Testing/InstagramCloneApp/InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+                  timestampString = "543649775.040094"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (InstagramCloneApp.Post) -&gt; () in closure #6 (Swift.Array&lt;InstagramCloneApp.Post&gt;) -&gt; Swift.Bool in InstagramCloneApp.ListPostViewModel.fetchMorePage() -&gt; ()"
+                  moduleName = "InstagramCloneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seyha/Documents/Projects/Testing/InstagramCloneApp/InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+                  timestampString = "543649775.044265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+            timestampString = "543649861.361768"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchMorePage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramCloneApp.ListPostViewModel.fetchMorePage() -&gt; ()"
+                  moduleName = "InstagramCloneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seyha/Documents/Projects/Testing/InstagramCloneApp/InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+                  timestampString = "543649861.371474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #6 (Swift.Array&lt;InstagramCloneApp.Post&gt;) -&gt; Swift.Bool in InstagramCloneApp.ListPostViewModel.fetchMorePage() -&gt; ()"
+                  moduleName = "InstagramCloneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seyha/Documents/Projects/Testing/InstagramCloneApp/InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+                  timestampString = "543649861.375104"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (InstagramCloneApp.Post) -&gt; () in closure #6 (Swift.Array&lt;InstagramCloneApp.Post&gt;) -&gt; Swift.Bool in InstagramCloneApp.ListPostViewModel.fetchMorePage() -&gt; ()"
+                  moduleName = "InstagramCloneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seyha/Documents/Projects/Testing/InstagramCloneApp/InstagramCloneApp/UI/ListPostViewController/ListPostViewModel.swift"
+                  timestampString = "543649861.381269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

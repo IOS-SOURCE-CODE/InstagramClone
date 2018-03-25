@@ -58,7 +58,15 @@ class ListPostViewModel {
             return Observable.of(newposts)
         }
       }
-      .distinctUntilChanged()
+      .filter { [weak self] values -> Bool in
+        var filter = true
+        values.forEach({ (post) in
+          if (self?.posts.value.contains(post))! {
+            filter = false
+          }
+        })
+        return filter
+      }
       .subscribe(onNext: { [weak self] value in
         debugPrint("\tnew value count \(value.count)")
         self?.posts.value.append(contentsOf: value)
@@ -67,6 +75,15 @@ class ListPostViewModel {
       .disposed(by: bag)
     
   }
+  
+  func removeDuplicateInts(values: [Int]) -> [Int] {
+    // Convert array into a set to get unique values.
+    let uniques = Set<Int>(values)
+    // Convert set back into an Array of Ints.
+    let result = Array<Int>(uniques)
+    return result
+  }
+
   
   
   func loadData() {
