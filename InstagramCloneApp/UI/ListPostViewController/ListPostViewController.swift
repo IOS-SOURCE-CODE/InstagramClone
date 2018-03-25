@@ -125,7 +125,6 @@ extension ListPostViewController {
             return self.tableView.isReachBottom(with: 0)
          }
          .subscribe(onNext: { [weak self] value in
-          debugPrint("========== request ===========")
             self?.viewModel.fetchMorePage()
          }).disposed(by: self.rx.disposeBag)
       

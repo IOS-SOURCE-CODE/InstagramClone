@@ -41,36 +41,30 @@ class ListPostViewModel {
   func fetchMorePage() {
     
     self.pagination
-      .map { return $0?.next_url }
+      .map { value -> URL? in
+        return value?.next_url }
       .filter { $0 != nil }
-      .distinctUntilChanged { $0 == $1 }
       .map { value -> URLRequest in
-        debugPrint("=============   URLRequest   =================")
         return URLRequest(url: value!)
       }
-      .map { [weak self] urlRequest -> Observable<Data?> in
-        guard let this = self else { Observable.just(nil) }
+      .distinctUntilChanged { $0 == $1 }
+      .flatMap { [weak self] urlRequest -> Observable<[Post]> in
+         guard let this = self else { return Observable.just([]) }
         return this.network.response(request: urlRequest)
-        
-//        guard let postvalue = newpost else { return Observable.just([])}
-//        return postvalue
+        .flatMap { [weak self] data -> Observable<[Post]> in
+          guard let newposts =  self?.responseJSON(with: data) else {
+            return Observable.just([])
+          }
+            return Observable.of(newposts)
+        }
       }
-    
-      .filter { $0 != nil }
-      .map { $0 }
-     
-//      .map {  [weak self] newpost in
-//        guard let result = newpost else { return [] }
-//        //            _ = result.map { self?.posts.value.append($0) }
-//        self?.posts.value.append(contentsOf: result)
-//        //            return (self?.posts.value)!
-//    }
-//      .map { [weak self] data  in
-//
-//        guard let result =  self?.responseJSON(with: data) else { return [] }
-//        //            _ = result.map { self?.posts.value.append($0) }
-//        self?.posts.value.append(contentsOf: result)
-//    }
+      .distinctUntilChanged()
+      .subscribe(onNext: { [weak self] value in
+        debugPrint("\tnew value count \(value.count)")
+        self?.posts.value.append(contentsOf: value)
+        
+      })
+      .disposed(by: bag)
     
   }
   
