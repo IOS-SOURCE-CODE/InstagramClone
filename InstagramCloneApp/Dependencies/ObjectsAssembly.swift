@@ -74,7 +74,7 @@ class ObjectsAssembly: Assembly {
       container.register(NetworkLayerType.self) { r in
          
          let baseURL = URL(string: EndPoint.active)!
-         let paramater:[String:Any] = [HTTPParameter.accessToken:  Authentication.apiKey, HTTPParameter.count: 2]
+         let paramater:[String:Any] = [HTTPParameter.accessToken:  Authentication.apiKey, HTTPParameter.count: 10]
          let urlRequest = GetURLRequest(path: EndPoint.Post.get.value, parameters: paramater)
          
          let network = NetworkLayer(baseURL: baseURL, urlRequest: urlRequest)

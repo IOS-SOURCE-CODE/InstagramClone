@@ -122,7 +122,7 @@ extension ListPostViewController {
         .debounce(0.5, scheduler: MainScheduler.instance)
         .withLatestFrom(tableView.rx.contentOffset)
          .filter { [unowned self] _ -> Bool in
-            return self.tableView.isReachBottom(with: 0)
+            return self.tableView.isReachBottom(with: 500)
          }
          .subscribe(onNext: { [weak self] value in
             self?.viewModel.fetchMorePage()
