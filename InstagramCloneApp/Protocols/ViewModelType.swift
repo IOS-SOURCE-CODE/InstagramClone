@@ -1,6 +1,6 @@
 //
 //  ViewModelType.swift
-//  EcommerceShopping
+//  InstagramCloneApp
 //
 //  Created by Hiem Seyha on 2/26/18.
 //  Copyright © 2018 seyha. All rights reserved.

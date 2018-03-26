@@ -1,10 +1,6 @@
 //
 //  ReachabilityManager.swift
-//  Application Registration
-//
-//  Created by Hiem Seyha on 7/11/17.
-//  Copyright © 2017 seyha. All rights reserved.
-//
+//  InstagramCloneApp
 
 import Foundation
 import RxSwift
@@ -50,7 +46,7 @@ class ReachabilityManager: NSObject {
         }
     }
     
-    // Start Monitoring wifi
+   //MARK: - add observer to reachability
    func startMonitoring() {
       
       NotificationCenter.default.addObserver(self, selector: #selector(self.reachabilityChanged),
@@ -63,7 +59,7 @@ class ReachabilityManager: NSObject {
       }
    }
    
-    // Stop Monitoring wifi
+    //MARK - remove observer 
     func stopMonitoring() {
         reachability.stopNotifier()
         NotificationCenter.default.removeObserver(self, name: ReachabilityChangedNotification, object: reachability)

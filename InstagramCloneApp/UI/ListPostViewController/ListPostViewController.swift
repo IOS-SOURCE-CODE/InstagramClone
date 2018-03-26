@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  SimpleAppDemo
+//  ListPostViewController.swift
+//  InstagramCloneApp
 //
 //  Created by Hiem Seyha on 3/19/18.
 //  Copyright © 2018 seyha. All rights reserved.
@@ -63,7 +63,6 @@ class ListPostViewController: UIViewController, BindableType {
     //MARK: - Setup Tableview appearance
    fileprivate func setupTableView() {
       tableView = UITableView(frame: UIScreen.main.bounds)
-      tableView.contentMode = .redraw
       view.addSubview(tableView)
       tableView.register(ListPostTableViewCell.self)
       tableView.estimatedRowHeight  = 500

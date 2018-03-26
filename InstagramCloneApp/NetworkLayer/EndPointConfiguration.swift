@@ -1,6 +1,6 @@
 //
 //  EndPointConfiguration.swift
-//  EcommerceShopping
+//  InstagramCloneApp
 //
 //  Created by Hiem Seyha on 3/17/18.
 //  Copyright © 2018 seyha. All rights reserved.

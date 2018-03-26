@@ -1,6 +1,6 @@
 //
 //  Post.swift
-//  SimpleAppDemo
+//  InstagramCloneApp
 //
 //  Created by Hiem Seyha on 3/20/18.
 //  Copyright © 2018 seyha. All rights reserved.
