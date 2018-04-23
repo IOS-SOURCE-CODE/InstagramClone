@@ -32,6 +32,7 @@ final class NetworkLayerProxy: NetworkLayerType {
       guard ReachabilityManager.shared.isNetworkAvailable else {
          return Observable.just(nil)
       }
+    
       return realNetworklayer.response(request:request)
    }
    

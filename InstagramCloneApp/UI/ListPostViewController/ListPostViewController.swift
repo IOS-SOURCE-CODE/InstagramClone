@@ -121,7 +121,7 @@ extension ListPostViewController {
         .debounce(0.5, scheduler: MainScheduler.instance)
         .withLatestFrom(tableView.rx.contentOffset)
          .filter { [unowned self] _ -> Bool in
-            return self.tableView.isReachBottom(with: 500)
+            return self.tableView.isReachBottom(with: 0)
          }
          .subscribe(onNext: { [weak self] value in
             self?.viewModel.fetchMorePage()
@@ -139,6 +139,10 @@ extension ListPostViewController {
 
 // MARK: -  Helper
 fileprivate extension UIScrollView {
+   /** Check if user scroll to the end of the bottom tableview.
+    - parameters:
+      -  offset: This is distance between scrollview and tableview
+   */
     fileprivate func isReachBottom(with offset: CGFloat) -> Bool {
       return self.contentOffset.y + self.frame.size.height + offset > self.contentSize.height
    }
