@@ -22,7 +22,7 @@ target 'InstagramCloneApp' do
   pod 'Kingfisher', '~> 4.0'
   
   # Check internet connection
-  pod 'ReachabilitySwift', '~> 3'
+  pod 'ReachabilitySwift'
 
 
   target 'InstagramCloneAppTests' do

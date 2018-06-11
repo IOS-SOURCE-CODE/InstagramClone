@@ -80,7 +80,7 @@ class ListPostViewModel {
                guard let strongSelf = self else { return [] }
                return strongSelf.responseJSON(with: data)
             }
-            .distinctUntilChanged()
+            .distinctUntilChanged({ $0 == $1 })
             .catchErrorJustReturn([])
             .bind(to: self.posts)
             .disposed(by: bag)
