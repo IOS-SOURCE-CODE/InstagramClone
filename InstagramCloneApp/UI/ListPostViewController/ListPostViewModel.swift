@@ -31,6 +31,7 @@ class ListPostViewModel {
       loadData()
    }
    
+   // MARK: - Action 
    lazy var detailAction: Action<Post, Swift.Never> = {
       return Action { post in
          let detailViewModel = DetailViewModel(item: [post])
